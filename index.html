@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продажа рыбной продукции от компании "Рыбные Деликатесы"</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    #slideshow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px; /* Измени значение на нужную высоту */
+    }
+
+    #slideshow img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="payment.html">Оплата</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Добро пожаловать на сайт по продаже рыбной продукции от компании Рыбные Деликатесы </h1>
+    <img src="images/logo.jpg" alt="logo" style="display: block; margin-left: auto; margin-right: auto;">
+
+    <aside>
+      <ul>
+        <li><a href="#ikra">Икра</a></li>
+        <li><a href="#kalmar">Кальмар</a></li>
+        <li><a href="#grebeshok">Гребешок</a></li>
+        <li><a href="#ryba">Рыба</a></li>
+        <li><a href="#rybnye-konservy">Рыбные консервы</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <div id="slideshow">
+    <img src="images/Ikra1.jpg" alt="Изображение 1">
+  </div>
+
+  <footer>
+    <p>&copy; "Рыбные Деликатесы", 2023.</p>
+  </footer>
+
+  <script>
+    var images = ['images/Ikra1.jpg', 'images/Seld1.jpg'];
+    var currentIndex = 0;
+    var slideshow = document.getElementById('slideshow');
+
+    setInterval(function() {
+      currentIndex = (currentIndex + 1) % images.length;
+      slideshow.innerHTML = '<img src="' + images[currentIndex] + '" alt="Изображение ' + (currentIndex + 1) + '">';
+    }, 3500);
+  </script>
+
+</body>
+
+</html>
