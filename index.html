@@ -7,16 +7,82 @@
   <title>Продажа рыбной продукции от компании "Рыбные Деликатесы"</title>
   <link rel="stylesheet" href="css/styles.css">
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    aside {
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin-left: -20px; /* смещение влево */
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+      margin: 1;
+    }
+
+    aside ul li {
+      margin-bottom: 5px;
+    }
+
     #slideshow {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 400px; 
+      height: 400px;
+      overflow: hidden;
+      margin-left: -10px; /* смещение влево */
+      margin-top: 20px;
     }
 
     #slideshow img {
-      max-width: 100%;
-      max-height: 100%;
+      max-width: 60%;
+      max-height: 60%;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
@@ -35,8 +101,8 @@
   </header>
 
   <main>
-    <h1>Добро пожаловать на сайт по продаже рыбной продукции от компании Рыбные Деликатесы </h1>
-    <img src="images/logo.jpg" alt="logo" style="display: block; margin-left: auto; margin-right: auto;">
+    <h1>Добро пожаловать на сайт по продаже рыбной продукции от компании "Рыбные Деликатесы" </h1>
+    <img src="images/logo.jpg" alt="logo" style="display: block; margin: 0 auto;">
 
     <aside>
       <ul>
@@ -47,10 +113,19 @@
         <li><a href="#rybnye-konservy">Рыбные консервы</a></li>
       </ul>
     </aside>
+
+         <p>Добро пожаловать в мир свежих и вкусных рыбных продуктов от компании "Рыбные Деликатесы"! Наша компания
+        специализируется на предоставлении только высококачественных рыбных продуктов!</p>
+         <p>Мы гордимся тем, что предлагаем широкий ассортимент продукции, включая свежую икру, кальмар, изысканный
+        гребешок, разнообразные виды рыбы и вкуснейшие рыбные консервы. Наши продукты проходят строгий контроль
+        качества, чтобы обеспечить вам всё только самое лучшее.</p>
+         <p>Благодарим вас за посещение нашего сайта. Наслаждайтесь просмотром ассортимента, и не
+        стесняйтесь связаться с нами, если у вас возникнут какие-либо вопросы или пожелания.
+    </section>
   </main>
 
   <div id="slideshow">
-    <img src="images/Ikra1.jpg" alt="Ikra1">
+    <img src="images/Ikra1.jpg" alt="Изображение 1">
   </div>
 
   <footer>
